@@ -8,9 +8,7 @@
 }
 
 body {
-  display: flex;
   justify-content: center;
-  align-items: center;
   width: 100vw;
   height: 100vh;
   font-size: 16px;
@@ -26,6 +24,30 @@ main {
   grid-template-rows: repeat(2, 1fr);
 }
 
+.display-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
 .item {
   padding: 2rem;
 }
@@ -34,8 +56,6 @@ main {
   grid-area: 1 / 1 / 2 / 3;
   border-radius: 1rem 1rem 0 0;
   background-color: var(--white);
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
 }
 
@@ -43,36 +63,27 @@ main {
   grid-area: 2 / 1 / 3 / 2;
   border-radius: 0 0 0 1rem;
   background-color: var(--cyan);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .item-3 {
   grid-area: 2 / 2 / 3 / 3;
   border-radius: 0 0 1rem 0;
   background-color: var(--light-cyan);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .item-1__titulo {
   color: var(--cyan);
   font-size: 1.5rem;
-  font-weight: 700;
 }
 
 .item-1__garantia {
   color: var(--bright-yellow);
   font-size: 1.25rem;
-  font-weight: 700;
 }
 
 .item-1__paragrafo {
   color: var(--grayish-blue);
   margin-bottom: 0.35rem;
-  font-weight: 400;
 }
 
 .item-2__botao {
@@ -83,7 +94,6 @@ main {
   background-color: var(--bright-yellow);
   color: var(--white);
   font-size: 1rem;
-  font-weight: 700;
 }
 
 .item-2__titulo, .item-3__titulo {
@@ -94,25 +104,21 @@ main {
 .item-2__preco span {
   font-size: 2rem;
   color: var(--white);
-  font-weight: 700;
 }
 
 .item-2__preco p:first-child {
-  display: flex;
-  align-items: center;
   gap: 0.5rem;
-  font-weight: 400;
   color: var(--light-gray);
   margin-bottom: .5rem;
 }
 
 .item-2__preco p:last-child {
-  font-weight: 400;
   color: var(--white);
 }
 
 .item-3__paragrafo {
   color: var(--light-gray);
+  margin-bottom: 0.10rem;
 }
 
 @media screen and (max-width: 600px) {
