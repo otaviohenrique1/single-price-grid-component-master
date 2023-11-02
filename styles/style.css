@@ -1,6 +1,6 @@
 :root {
   --cyan: hsl(179, 62%, 43%);
-  --light-cyan: hsla(179, 62%, 43%, 50%);
+  --light-cyan: hsla(179, 62%, 43%, 70%);
   --bright-yellow: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
@@ -31,13 +31,12 @@ main {
 }
 
 .item-1 {
-  /* grid-row-start: 1;
-  grid-column-start: 1;
-  grid-row-end: 2;
-  grid-column-end: 3; */
   grid-area: 1 / 1 / 2 / 3;
   border-radius: 1rem 1rem 0 0;
   background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .item-2 {
@@ -56,6 +55,24 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.item-1__titulo {
+  color: var(--cyan);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.item-1__garantia {
+  color: var(--bright-yellow);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.item-1__paragrafo {
+  color: var(--grayish-blue);
+  margin-bottom: 0.35rem;
+  font-weight: 400;
 }
 
 .item-2__botao {
