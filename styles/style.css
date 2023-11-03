@@ -96,7 +96,8 @@ main {
   font-size: 1rem;
 }
 
-.item-2__titulo, .item-3__titulo {
+.item-2__titulo,
+.item-3__titulo {
   font-size: 1.10rem;
   color: var(--white);
 }
@@ -125,7 +126,7 @@ main {
   body {
     align-items: start;
     margin-top: 20%;
-  }  
+  }
 
   main {
     width: 375px;
@@ -137,12 +138,12 @@ main {
   .item-1 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  
+
   .item-2 {
     grid-area: 2 / 1 / 3 / 2;
     border-radius: 0;
   }
-  
+
   .item-3 {
     grid-area: 3 / 1 / 4 / 2;
     border-radius: 0 0 1rem 1rem;
